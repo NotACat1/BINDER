@@ -1,0 +1,81 @@
+{
+  "name": "binder",
+  "version": "1.0.0",
+  "description": "React проект с TypeScript, SCSS, линтерами и Husky для качественной разработки.",
+  "main": "src/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotACat1/BINDER.git"
+  },
+  "author": "NotACat1 notacat.mail@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "react",
+    "typescript",
+    "scss",
+    "eslint",
+    "husky",
+    "prettier"
+  ],
+  "homepage": "https://NotACat1.github.io/BINDER",
+  "scripts": {
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "format": "prettier --write './src/**/*.{ts,tsx,scss}'",
+    "prepare": "husky install",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "craco-alias": "^3.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@craco/craco": "^7.1.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@types/react-modal": "^3.16.3",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.0"
+  }
+}

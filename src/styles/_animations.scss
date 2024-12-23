@@ -1,0 +1,133 @@
+@use '@styles/colors';
+
+@keyframes underlineSlide {
+  from {
+    width: 0;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@mixin underline-animation(
+  $color: colors.$text-color,
+  $hover-color: colors.$primary-hover,
+  $active-color: colors.$primary-color,
+  $height: 1px,
+  $duration: 0.3s
+) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+  transition: color $duration ease-in-out;
+
+  &:hover {
+    color: $hover-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: $height;
+      background: $hover-color;
+      animation: underlineSlide $duration ease-in-out forwards;
+    }
+  }
+
+  &.active {
+    font-weight: bold;
+    color: $active-color;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $active-color;
+      animation: underlineSlide 0.5s ease forwards;
+    }
+  }
+}
+
+@mixin icon-in-circle(
+  $size: 48px,
+  $bgColor: #ffffff10,
+  $hoverBgColor: #ffffff30,
+  $hoverScale: 1.2,
+  $hoverFill: colors.$primary-color,
+  $duration: 0.3s
+) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $size / 3;
+  border-radius: 50%;
+  background-color: $bgColor;
+  transition: all $duration ease-in-out;
+
+  svg {
+    width: $size / 2;
+    height: $size / 2;
+    fill: colors.$text-white;
+    transition:
+      transform $duration ease-in-out,
+      fill $duration ease-in-out;
+  }
+
+  &:hover {
+    background-color: $hoverBgColor;
+
+    svg {
+      transform: scale($hoverScale);
+      fill: $hoverFill;
+    }
+  }
+}
+
+@mixin up-card-effect(
+  $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+  $hover-transform: translateY(-10px),
+  $hover-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  $transition-duration: 0.3s
+) {
+  box-shadow: $box-shadow;
+  transition:
+    transform $transition-duration ease-in-out,
+    box-shadow $transition-duration ease-in-out;
+
+  &:hover {
+    transform: $hover-transform;
+    box-shadow: $hover-box-shadow;
+  }
+}
+
+@mixin hover-btn(
+  $bg: colors.$primary-color,
+  $hover-bg: colors.$background-color,
+  $transition-duration: 0.3s
+) {
+  background-color: $bg;
+  transition: background-color $transition-duration ease-in-out;
+
+  &:hover {
+    background-color: $hover-bg;
+  }
+}
+
+@mixin hover-icon(
+  $fill: colors.$text-color,
+  $hover-fill: colors.$primary-hover,
+  $transition-duration: 0.3s
+) {
+  fill: $fill;
+  transition: fill $transition-duration ease-in-out;
+
+  &:hover {
+    fill: $hover-fill;
+  }
+}

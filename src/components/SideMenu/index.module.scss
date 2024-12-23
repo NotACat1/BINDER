@@ -1,0 +1,80 @@
+@use '@styles/colors';
+@use '@styles/z-index';
+@use '@styles/animations';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: colors.$overlay;
+  z-index: z-index.$z-index-modal;
+  animation: fadeIn 0.3s ease;
+}
+
+.menu {
+  background: colors.$card-color;
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  overflow-y: auto;
+  flex-direction: column;
+  box-shadow: -4px 0 6px colors.$shadow;
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.closeButton {
+  align-self: flex-end;
+  margin-top: 5px;
+  margin-right: 17px;
+
+  svg {
+    @include animations.hover-icon;
+
+    width: 24px;
+    height: auto;
+  }
+}
+
+.navLinks {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.navLink {
+  display: block;
+  text-decoration: none;
+  color: colors.$text-color;
+  transition:
+    background-color 0.3 ease-in-out,
+    color 0.3 ease-in-out;
+
+  &:hover {
+    background-color: colors.$background-color;
+    color: colors.$primary-hover;
+  }
+
+  &_active {
+    color: colors.$primary-color;
+    font-weight: bold;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
