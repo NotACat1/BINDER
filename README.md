@@ -79,6 +79,9 @@ REACT_APP_FORMSPREE_URL=https://formspree.io/f/your_form_id
 
 ## 📸 Скриншоты
 
+![notacat1 github io_BINDER_ (1)](https://github.com/user-attachments/assets/b9da3344-91fc-4b11-82b2-91f08d019b56)
+
+
 ---
 
 ## 🤝 Вклад в проект
