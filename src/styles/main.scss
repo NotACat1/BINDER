@@ -1,0 +1,16 @@
+@import 'colors';
+@import 'typography';
+@import 'animations';
+
+// Базовые стили
+body {
+  font-family: $font-family-primary;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}

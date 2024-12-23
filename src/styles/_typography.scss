@@ -1,0 +1,38 @@
+// Основные настройки
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Open Sans', sans-serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Заголовки
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-primary;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+p {
+  font-family: $font-family-secondary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: var(--text-color);
+}
+
+// Утилиты текста
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-muted {
+  color: #6c757d;
+}
