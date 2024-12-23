@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://binder-construction.ru/sitemap.xml
