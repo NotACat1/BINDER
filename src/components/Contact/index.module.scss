@@ -1,0 +1,51 @@
+@use '@styles/colors';
+@use '@styles/animations';
+
+.contactSection {
+  background-color: colors.$background-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px colors.$shadow;
+
+  .contactInfo {
+    .contact a {
+      @include animations.underline-animation;
+
+      color: colors.$text-color;
+      text-decoration: none;
+    }
+
+    .social {
+      @include animations.icon-in-circle(
+        48px,
+        #000000c1,
+        #00000055,
+        1.2,
+        colors.$primary-color,
+        0.5s
+      );
+
+      overflow: visible;
+    }
+  }
+
+  .contactForm {
+    .submitButton {
+      @include animations.hover-btn;
+
+      width: 100%;
+      color: colors.$text-white;
+    }
+
+    .errorInput {
+      border: colors.$error-color 1px solid;
+    }
+
+    .error {
+      color: colors.$error-color;
+    }
+
+    .success {
+      color: colors.$success-color;
+    }
+  }
+}

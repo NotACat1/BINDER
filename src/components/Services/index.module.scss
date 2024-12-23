@@ -1,0 +1,15 @@
+@use '@styles/colors';
+@use '@styles/animations';
+
+.card {
+  @include animations.up-card-effect;
+
+  background: colors.$card-color;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.icon {
+  height: 60px;
+  width: auto;
+}

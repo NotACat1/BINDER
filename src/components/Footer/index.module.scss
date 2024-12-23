@@ -1,0 +1,23 @@
+@use '@styles/colors';
+@use '@styles/animations';
+
+.contact {
+  color: colors.$text-white;
+
+  a {
+    @include animations.underline-animation;
+
+    text-decoration: none;
+    color: colors.$text-white;
+  }
+}
+
+.socialIcon {
+  @include animations.icon-in-circle;
+
+  overflow: visible;
+}
+
+.text {
+  color: colors.$text-white;
+}
