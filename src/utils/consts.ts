@@ -16,6 +16,7 @@ import Project14 from '@assets/projects/14.jpg';
 import Project15 from '@assets/projects/15.jpg';
 import Project16 from '@assets/projects/16.jpg';
 import Project17 from '@assets/projects/17.jpg';
+import Project18 from '@assets/projects/18.png';
 import Project4 from '@assets/projects/4.jpg';
 import Project5 from '@assets/projects/5.jpg';
 import Project6 from '@assets/projects/6.jpg';
@@ -105,5 +106,6 @@ export const PROJECTS = {
     Project15,
     Project16,
     Project17,
+    Project18,
   ],
 };
