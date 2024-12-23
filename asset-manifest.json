@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/BINDER/static/css/main.63937899.css",
+    "main.js": "/BINDER/static/js/main.05c5d1d5.js",
+    "static/media/1.jpg": "/BINDER/static/media/1.56c2640333c6c4034b7c.jpg",
+    "static/media/11.jpg": "/BINDER/static/media/11.03459e7a12b9307b9e5a.jpg",
+    "static/media/12.jpg": "/BINDER/static/media/12.1b0f724adc59cae2f286.jpg",
+    "static/media/13.jpg": "/BINDER/static/media/13.1b0cf05b6904656672dd.jpg",
+    "static/media/8.jpg": "/BINDER/static/media/8.907417dc72db65c7f66c.jpg",
+    "static/media/5.jpg": "/BINDER/static/media/5.d972d0af5afb6d05df90.jpg",
+    "static/media/10.jpg": "/BINDER/static/media/10.0a55e33770007116c345.jpg",
+    "static/media/4.jpg": "/BINDER/static/media/4.768e0bda3a9a9a7177de.jpg",
+    "static/media/2.jpg": "/BINDER/static/media/2.fc8a5bfe6457596b402f.jpg",
+    "static/media/7.jpg": "/BINDER/static/media/7.2c29f0da148e3cd0c06b.jpg",
+    "static/media/6.jpg": "/BINDER/static/media/6.d3a839df01173f66c3f9.jpg",
+    "static/media/slick.svg": "/BINDER/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/BINDER/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/BINDER/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/instagram.svg": "/BINDER/static/media/instagram.448198b22019bf2f0b71355b8346c675.svg",
+    "index.html": "/BINDER/index.html",
+    "static/media/slick.woff": "/BINDER/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/whatsapp.svg": "/BINDER/static/media/whatsapp.17112172df21e518376d04f5814c11d8.svg",
+    "static/media/telegram.svg": "/BINDER/static/media/telegram.789de614dc523fbf2a979eaf314b768b.svg",
+    "static/media/BuildingFour.svg": "/BINDER/static/media/BuildingFour.7a13a5d2c657e51fd427a4923d3d46ff.svg",
+    "static/media/BuildingThree.svg": "/BINDER/static/media/BuildingThree.986f82de8aa94ffbb046c7d201cbeb55.svg",
+    "static/media/menu.svg": "/BINDER/static/media/menu.1320df01975afb9d39dd1adebbeaf324.svg",
+    "static/media/BuildingTwo.svg": "/BINDER/static/media/BuildingTwo.3c3e3c0e26cbd90e51202d296996b72a.svg",
+    "static/media/BuildingOne.svg": "/BINDER/static/media/BuildingOne.27302d7de662e34ba2674c85d716e9b1.svg",
+    "static/media/close.svg": "/BINDER/static/media/close.ed3061de2e07bc29707e45c5aebcb4fe.svg",
+    "static/media/right.svg": "/BINDER/static/media/right.b654783430974bfcf6168e3d43ba5131.svg",
+    "static/media/left.svg": "/BINDER/static/media/left.438ad83b2317c15ad0ed662cf6dd581f.svg",
+    "main.63937899.css.map": "/BINDER/static/css/main.63937899.css.map",
+    "main.05c5d1d5.js.map": "/BINDER/static/js/main.05c5d1d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63937899.css",
+    "static/js/main.05c5d1d5.js"
+  ]
+}
